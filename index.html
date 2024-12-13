@@ -4,6 +4,12 @@
         
         <title>InfoDay2024</title>
          <style>
+             .button-grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+            grid-gap: 20px; /* Gap between grid items (buttons) */
+        }
+
         button {
             border: none;
             background-color: lightblue;
@@ -25,6 +31,7 @@
             <h1>PLKWCC Info Day 2024</h1>
         <hr>
          <h1>Mini games</h1>
+        <div class="button-grid-container">
       <button onclick="window.location.href = '2084.html';">
           <img src="2084.png" alt="Description of Image 1" width="50" height="50">
           2084</button>
@@ -33,5 +40,6 @@
       <button onclick="window.location.href = 'ChromeDin.html';">ChromeDin</button>
        <button onclick="window.location.href = 'Breakout.html';">Breakout</button>
          <button onclick="window.location.href = 'snake.html';">snake</button>
+        </div>
     </body>
 </html>
